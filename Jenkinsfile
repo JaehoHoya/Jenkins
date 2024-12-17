@@ -6,7 +6,7 @@ pipeline {
         GITHUB_REPO = "https://github.com/JaehoHoya/Jenkins.git"
         JAR_FILE = "jenkins.jar"
     }
-
+  
     stages {
         
         stage('Cleanup Workspace') {
