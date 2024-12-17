@@ -1,6 +1,6 @@
 pipeline {
     agent any
-
+/*
     environment {
         DOCKER_IMAGE = "jaehohoya/Jenkins:1.0"
         GITHUB_REPO = "https://github.com/JaehoHoya/Jenkins.git"
@@ -15,7 +15,7 @@ pipeline {
                 echo 'Cleaned up'
             }
         }
-
+*/
         stage('Git Clone') {
             steps {
                 echo 'Cloning Git repository...'
