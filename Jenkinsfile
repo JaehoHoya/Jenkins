@@ -1,22 +1,22 @@
 pipeline {
     agent any
-/*
+
     environment {
         DOCKER_IMAGE = "jaehohoy/jenkins:1.0"
         GITHUB_REPO = "https://github.com/JaehoHoya/Jenkins.git"
         JAR_FILE = "jenkins.jar"
     }
-    */
+    
   
     stages {
-        /*
+        
         stage('Cleanup Workspace') {
             steps {
                 //cleanWs()
                 echo 'Cleaned up'
             }
         }
-        */
+        
         
         stage('Git Clone') {
             steps {
@@ -33,7 +33,7 @@ pipeline {
                 sh 'chmod +x ./${JAR_FILE}'
             }
         }
-         /*
+         
         stage('Prepare JAR File') {
             steps {
                 script {
@@ -51,8 +51,8 @@ pipeline {
                 }
             }
         }
-         /*
-         /*
+         
+         
         stage('Build Docker Image') {
             steps {
                 script {
@@ -66,8 +66,8 @@ pipeline {
                 }
             }
         }
-        */
-        /*
+        
+        
         stage('Push to Docker Hub') {
             steps {
                 script {
@@ -80,8 +80,8 @@ pipeline {
                     }
                 }
             }
-        }*/
-        /*
+        }
+        
         stage('Run Docker Container') {
             steps {
                 script {
@@ -93,13 +93,13 @@ pipeline {
                 }
             }
         }
-        */
+        
     }
-    /*
+    
     post {
         always {
             echo "Cleaning up workspace..."
             //cleanWs()
         }
-    }*/
+    }
 }
