@@ -1,20 +1,22 @@
 pipeline {
     agent any
-
+/*
     environment {
         DOCKER_IMAGE = "jaehohoy/jenkins:1.0"
         GITHUB_REPO = "https://github.com/JaehoHoya/Jenkins.git"
         JAR_FILE = "jenkins.jar"
     }
+    */
   
     stages {
-        
+        /*
         stage('Cleanup Workspace') {
             steps {
                 //cleanWs()
                 echo 'Cleaned up'
             }
         }
+        */
         
         stage('Git Clone') {
             steps {
