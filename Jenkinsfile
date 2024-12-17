@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKER_IMAGE = "jaehohoy/jenkins:1.0"
-        GITHUB_REPO = "https://github.com/JaehoHoya/jenkins.git"
+        GITHUB_REPO = "https://github.com/JaehoHoya/Jenkins.git"
         JAR_FILE = "jenkins.jar"
     }
 
